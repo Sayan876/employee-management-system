@@ -26,6 +26,12 @@ import lombok.RequiredArgsConstructor;
 @CrossOrigin("*")
 public class EmployeeController {
     private final EmployeeService employeeService;
+
+
+     @GetMapping("/")
+    public String home() {
+        return "Employee Management API is running 🚀";
+    }
     
     
     @PostMapping("/employee")
